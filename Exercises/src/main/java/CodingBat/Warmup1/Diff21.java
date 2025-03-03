@@ -1,4 +1,4 @@
-package Warmup1;
+package CodingBat.Warmup1;
 
 public class Diff21 {
     public int execute(int n) {

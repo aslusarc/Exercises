@@ -1,4 +1,4 @@
-package Warmup1;
+package CodingBat.Warmup1;
 
 public class SleepIn {
     public boolean execute(boolean isWeekday, boolean isVacation) {

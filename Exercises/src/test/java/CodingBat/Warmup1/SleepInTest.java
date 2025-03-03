@@ -1,4 +1,4 @@
-package Warmup1;
+package CodingBat.Warmup1;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

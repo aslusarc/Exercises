@@ -1,4 +1,4 @@
-package Warmup1;
+package CodingBat.Warmup1;
 
 public class MissingChar {
     public String execute(String input, int indexToBeDeleted) {
