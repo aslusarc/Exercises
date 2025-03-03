@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class SleepInTest {
     @MethodSource
-    private static Stream<Arguments> testSource() {
+    private static Stream<Arguments> methodSource() {
         return Stream.of(
                 Arguments.of(true, true, true),
                 Arguments.of(true, false, false),
@@ -18,7 +18,7 @@ public class SleepInTest {
     }
 
     @ParameterizedTest
-    @MethodSource("testSource")
+    @MethodSource("methodSource")
     public void test(boolean isWeekday, boolean isVacation, boolean expectedOutput) {
         SleepIn sleepIn = new SleepIn();
         assert sleepIn.execute(isWeekday, isVacation) == expectedOutput;

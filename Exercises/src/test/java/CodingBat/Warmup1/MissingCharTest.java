@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class MissingCharTest {
     @MethodSource
-    private static Stream<Arguments> getTestArgs() {
+    private static Stream<Arguments> methodSource() {
         return Stream.of(
                 Arguments.of("", 0, ""),
                 Arguments.of("Banana", 0, "anana"),
@@ -20,7 +20,7 @@ public class MissingCharTest {
     }
 
     @ParameterizedTest
-    @MethodSource("getTestArgs")
+    @MethodSource("methodSource")
     public void test(String input, int indexToBeDeleted, String expectedOutput) {
         MissingChar missingChar = new MissingChar();
         assert missingChar.execute(input, indexToBeDeleted).equals(expectedOutput);
